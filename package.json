@@ -11,7 +11,8 @@
     "prop-types": "latest",
     "react": "latest",
     "react-dom": "latest",
-    "react-redux": "^7.2.3"
+    "react-redux": "^7.2.3",
+    "swiper": "^6.6.1"
   },
   "scripts": {
     "dev": "next",

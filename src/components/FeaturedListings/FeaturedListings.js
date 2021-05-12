@@ -51,13 +51,13 @@ const FeaturedListings = () => {
                     </TextWithDivider>
                 </Box>
 
-                <Grid justify={'center'}  alignItems={'center'}
+                <Grid justify={'center'} alignItems={'center'}
                       spacing={smallerThanMd ? 0 : 8}
                       container
                       className={classes.featuredListingsGrid}
                 >
                     {
-                        featuredListItems.map(({heading,subHeading,imageSrc}) => (
+                        featuredListItems.map(({heading, subHeading, imageSrc}) => (
                             <Grid md={6} item style={{width: '100%'}}>
                                 <FeaturedListingItem
                                     heading={heading}
@@ -68,15 +68,6 @@ const FeaturedListings = () => {
                         ))
                     }
 
-                    {/*<Grid md={6} item style={{width: '100%'}}>*/}
-                    {/*    <FeaturedListingItem/>*/}
-                    {/*</Grid>*/}
-                    {/*<Grid md={6} item style={{width: '100%'}}>*/}
-                    {/*   <FeaturedListingItem/>*/}
-                    {/*</Grid>*/}
-                    {/*<Grid md={6} item style={{width: '100%'}}>*/}
-                    {/*    <FeaturedListingItem/>*/}
-                    {/*</Grid>*/}
                 </Grid>
 
             </Container>

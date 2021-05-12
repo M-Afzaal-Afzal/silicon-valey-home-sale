@@ -3,6 +3,9 @@ import PropTypes from 'prop-types';
 import Head from 'next/head';
 import CssBaseline from '@material-ui/core/CssBaseline';
 
+import "swiper/swiper.min.css";
+import "swiper/components/pagination/pagination.min.css"
+
 import {Provider} from 'react-redux'
 import store from "../src/store/store";
 import Layout from "../src/components/Layout/Layout";
