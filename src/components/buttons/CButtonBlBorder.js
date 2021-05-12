@@ -4,14 +4,14 @@ import {Button, makeStyles} from "@material-ui/core";
 const useStyles = makeStyles(theme => ({
     button: {
         borderRadius: 0,
-        border: '1px solid #fff',
-        fontSize:'1.6rem',
-        padding:'.5rem 4rem',
-        color:'white',
+        border: '1px solid #000000',
+        fontSize:'1.2rem',
+        padding:'.5rem 1rem',
+        color:'#000000',
     }
 }))
 
-const CButtonBlBorder = ({children,...props}) => {
+const CButtonWBorder = ({children,...props}) => {
 
     const classes = useStyles();
 
@@ -22,4 +22,4 @@ const CButtonBlBorder = ({children,...props}) => {
     );
 };
 
-export default CButtonBlBorder;
+export default CButtonWBorder;

@@ -1,7 +1,7 @@
 import React from 'react';
 import {makeStyles, Typography} from "@material-ui/core";
 import Image from 'next/image'
-import CButtonBlBorder from "../buttons/CButtonBlBorder";
+import CButtonWBorder from "../buttons/CButtonWBorder";
 
 const useStyles = makeStyles(theme => ({
     HeroContainer: {
@@ -64,6 +64,7 @@ const Hero = () => {
     return (
         <div className={classes.HeroContainer}>
             <Image
+                priority
                 src={'/images/Hero/hero-min.jpg'}
                 layout={'fill'}
                 objectFit={'cover'}
@@ -87,9 +88,9 @@ const Hero = () => {
 
             {/*    Hero Button*/}
                 <div className={classes.CButtonContainer}>
-                    <CButtonBlBorder>
+                    <CButtonWBorder>
                         VIEW HOMES
-                    </CButtonBlBorder>
+                    </CButtonWBorder>
                 </div>
             </div>
 
