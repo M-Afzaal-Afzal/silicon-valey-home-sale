@@ -19,6 +19,7 @@ import Drawer from '@material-ui/core/Drawer';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
+import Link from '../../utils/Link';
 
 const useStyles = makeStyles(theme => ({
     grow: {
@@ -63,8 +64,9 @@ const useStyles = makeStyles(theme => ({
     headerButton: {
         letterSpacing: '1px',
         fontWeight: 'normal',
-        fontSize: '20px'
-    }
+        fontSize: '20px',
+    },
+
 }))
 
 const Header = () => {
@@ -106,8 +108,12 @@ const Header = () => {
                             <Button className={classes.headerButton} size={'large'}>
                                 HOME
                             </Button>
-                            <Button className={classes.headerButton} size={'large'}>
-                                COMMUNITIES
+
+                            <Button  component={Link} href={'/communities'} style={{textDecoration:'none'}} className={classes.headerButton}
+                                    size={'large'}>
+
+                                    COMMUNITIES
+
                             </Button>
                             <Button className={classes.headerButton} size={'large'}>
                                 PROPERTIES
