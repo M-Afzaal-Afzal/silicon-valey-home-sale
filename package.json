@@ -8,9 +8,11 @@
     "@reduxjs/toolkit": "^1.5.1",
     "clsx": "latest",
     "next": "^10.2.0",
+    "notistack": "^1.0.7",
     "prop-types": "latest",
     "react": "latest",
     "react-dom": "latest",
+    "react-hook-form": "^7.5.2",
     "react-redux": "^7.2.3",
     "swiper": "^6.6.1"
   },

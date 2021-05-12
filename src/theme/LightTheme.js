@@ -13,6 +13,9 @@ const lightTheme = createMuiTheme({
     error: {
       main: red.A400,
     },
+    dark: {
+      main: '#1c1c1c'
+    },
     background: {
       default: '#fff',
     },
