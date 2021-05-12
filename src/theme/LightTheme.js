@@ -20,8 +20,14 @@ const lightTheme = createMuiTheme({
   typography: {
     fontFamily : 'Montserrat, sans-serif',
     lineHeight: '1px',
+    h1: {
+      fontSize: '2.5rem',
+    },
     h5: {
       fontSize: '22px',
+    },
+    h6: {
+      fontSize: '1.3rem',
     }
   }
 });

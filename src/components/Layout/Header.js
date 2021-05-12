@@ -98,14 +98,14 @@ const Header = () => {
 
                         <Hidden mdUp>
                             <Box className={classes.logoLink}>
-                                <Button className={classes.headerButton} size={'large'}>
+                                <Button component={Link} href={'/'} style={{textDecoration:'none'}}  className={classes.headerButton} size={'large'}>
                                     Logo
                                 </Button>
                             </Box>
                         </Hidden>
 
                         <Hidden smDown>
-                            <Button className={classes.headerButton} size={'large'}>
+                            <Button  component={Link} href={'/'} style={{textDecoration:'none'}} className={classes.headerButton} size={'large'}>
                                 HOME
                             </Button>
 
