@@ -84,7 +84,7 @@ const Contact = () => {
 
 
     return (
-        <Box className={classes.contact}>
+        <Box className={classes.contact} id={'contact'}>
             <Container maxWidth={'lg'}>
 
                 <Box className={classes.textWithDividerContainer}>

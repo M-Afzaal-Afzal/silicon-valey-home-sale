@@ -20,6 +20,7 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import Link from '../../utils/Link';
+import { Link as RSLink } from 'react-scroll'
 
 const useStyles = makeStyles(theme => ({
     grow: {
@@ -125,7 +126,7 @@ const Header = () => {
 
                     <Box className={`${classes.grow} ${classes.rightIconsContainer}`}>
                         <Hidden smDown>
-                            <Button className={classes.headerButton} size={'large'}>
+                            <Button component={RSLink} to={'contact'} smooth={'true'} className={classes.headerButton} size={'large'}>
                                 CONTACT
                             </Button>
 
@@ -188,7 +189,7 @@ const Header = () => {
                             <Divider/>
 
                             <Box>
-                                <Box onClick={toggleDrawer}>
+                                <Box component={RSLink} to={'contact'} onClick={toggleDrawer}>
                                     <ListItem button>
                                         <ListItemText primary={'Contact'}/>
                                     </ListItem>

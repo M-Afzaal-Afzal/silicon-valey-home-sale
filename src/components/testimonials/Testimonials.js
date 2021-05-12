@@ -11,7 +11,7 @@ import "swiper/components/navigation/navigation.min.css"
 import Testimonial from "./Testimonial";
 import TextWithDivider from "../Common/TextWithDivider";
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
     testimonials: {
         margin: '2rem auto 4.5rem'
     },
@@ -74,8 +74,8 @@ const Testimonials = () => {
                     className="mySwiper"
             >
                 {
-                    testimonialItems.map(({testimonialText, author, role}) => (
-                        <SwiperSlide className={classes.swiperSlide}>
+                    testimonialItems.map(({testimonialText, author, role},index) => (
+                        <SwiperSlide key={index} className={classes.swiperSlide}>
                             <Testimonial
                                 testimonialText={testimonialText}
                                 author={author}

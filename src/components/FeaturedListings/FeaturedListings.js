@@ -58,7 +58,7 @@ const FeaturedListings = () => {
                 >
                     {
                         featuredListItems.map(({heading, subHeading, imageSrc}) => (
-                            <Grid md={6} item style={{width: '100%'}}>
+                            <Grid key={heading} md={6} item style={{width: '100%'}}>
                                 <FeaturedListingItem
                                     heading={heading}
                                     subheading={subHeading}
